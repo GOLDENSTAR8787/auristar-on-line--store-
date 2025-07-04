@@ -167,14 +167,13 @@
         (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) ||
         (e.ctrlKey && e.key === 'U')
       ) {
-        alert('此操作已被禁止！');
+        alert('你想幹啥?！');
         e.preventDefault();
       }
     });
 
     // 禁止右鍵
     document.addEventListener('contextmenu', function (e) {
-      alert('禁止使用右鍵');
       e.preventDefault();
     });
   </script>
